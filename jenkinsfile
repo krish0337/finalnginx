@@ -3,7 +3,7 @@ pipeline {
         docker { image 'nginx' }
     }
     stages {
-        stage('BUILD NGINX') {
+        stage('Build NGINX') {
             steps {
                 sh 'ls'
             }
