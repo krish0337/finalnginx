@@ -4,7 +4,7 @@ pipeline {
         pollSCM '* * * * *'
       }
     agent {
-        docker { image 'bitnami/kubectl' }
+        docker { image 'nginx' }
     }
     stages {
         stage('Deploy Nginx') {
