@@ -7,7 +7,7 @@ pipeline {
         docker { image 'nginx' }
     }
     stages {
-        stage('dep app') {
+        stage('Deploy Nginx') {
             steps {
                 sh 'pwd'
                 sh 'ls -al'
