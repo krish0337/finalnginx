@@ -3,7 +3,7 @@ pipeline {
         docker { image 'nginx' }
     }
     stages {
-        stage('Build NGINX') {
+        stage('Build NNGINX') {
             steps {
                 sh 'pwd'
                 sh 'ls -al'
