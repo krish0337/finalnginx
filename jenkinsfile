@@ -3,7 +3,7 @@ pipeline {
     triggers {
         pollSCM '* * * * *'
       }
-    agent {
+    //agent {
         docker { image 'nginx' }
     }
     stages {
