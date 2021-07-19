@@ -5,6 +5,7 @@ pipeline {
     stages {
         stage('Build NGINX') {
             steps {
+                sh 'pwd'
                 sh 'ls -al'
             }
         }
