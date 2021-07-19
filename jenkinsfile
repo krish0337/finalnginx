@@ -1,9 +1,9 @@
 pipeline {
-    agent any
+    //agent any
     triggers {
         pollSCM '* * * * *'
       }
-    //agent {
+    agent {
         docker { image 'nginx' }
     }
     stages {
@@ -12,6 +12,6 @@ pipeline {
                 sh 'pwd'
                 sh 'ls -al'
             }
-       // }
+        }
     }
 }
