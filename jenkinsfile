@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Deploy Nginx') {
             steps {
-                sh 'docker run nginx'
+                
                 sh 'pwd'
                 sh 'ls -al'
             }
