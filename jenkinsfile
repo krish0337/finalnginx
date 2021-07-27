@@ -12,10 +12,8 @@ pipeline {
                  
         sh """  
                 ls -al
-                sudo apt-get install python
-                
-           
-                ls -al
+                pwd
+          
                 
           """    
             }
