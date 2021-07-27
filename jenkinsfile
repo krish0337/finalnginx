@@ -10,7 +10,8 @@ pipeline {
         stage('Deploy Nginx') {
             steps {
                  
-        sh """      
+        sh """  
+                docker images  
                 ls -al
                 
           """    
