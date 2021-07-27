@@ -9,11 +9,11 @@ pipeline {
     stages {
         stage('Deploy Nginx') {
             steps {
-                 sh """ 
+                 
               
                 sh 'ls -al'
                 
-               """ 
+              
             }
         }
     }
