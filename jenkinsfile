@@ -10,10 +10,10 @@ pipeline {
         stage('Deploy Nginx') {
             steps {
                  
-              
-                sh 'ls -al'
-                /usr/local/bin/kubectl  get pods 
-              
+        sh """      
+                ls -al
+               
+          """    
             }
         }
     }
