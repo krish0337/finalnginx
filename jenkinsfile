@@ -12,6 +12,8 @@ pipeline {
                  
         sh """  
                 pwd 
+                cd /Users/krishnakumar.p/
+                docker images
                 ls -al
                 
           """    
