@@ -4,16 +4,17 @@ pipeline {
         pollSCM '* * * * *'
       }
     agent {
-        docker { image 'nginx' }
+        docker { image 'ubuntu' }
     }
     stages {
-        stage('Deploy Nginx') {
+        stage('Deploy ubuntu') {
             steps {
                  
         sh """  
-                pwd 
-                /Users/krishnakumar.p/Desktop 
-                docker images
+                ls -al
+                apt-get install python
+                
+           
                 ls -al
                 
           """    
