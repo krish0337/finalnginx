@@ -10,8 +10,7 @@ pipeline {
         stage('Deploy Nginx') {
             steps {
                  sh """ 
-                
-                sh 'pwd'
+              
                 sh 'ls -al'
                 
                """ 
